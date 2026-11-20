@@ -1,0 +1,86 @@
+
+# ==============================
+# Python cache files
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==============================
+# Virtual environments
+# ==============================
+venv/
+.venv/
+env/
+ENV/
+
+# ==============================
+# Environment variables / secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# IDE and editor files
+# ==============================
+.vscode/
+.idea/
+*.code-workspace
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Python build files
+# ==============================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ==============================
+# Testing and coverage
+# ==============================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ==============================
+# Logs
+# ==============================
+*.log
+
+# ==============================
+# OS generated files
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ==============================
+# Database files
+# ==============================
+*.sqlite3
+*.db
+
+# ==============================
+# Machine learning / model files
+# ==============================
+*.pt
+*.pth
+*.h5
+*.pkl
+*.joblib
