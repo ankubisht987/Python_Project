@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from contextlib import asynccontextmanager
 from exceptions import (
     PinCodeNotFoundError,
     InvalidPincodeError,
@@ -12,10 +13,17 @@ from model import(
 )
 from data import understand_query
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    print("Starting the Application")
+    yield
+    print("Ending the Application")
+
 
 app = FastAPI(
     title="Pincode lookUp API",
-    description="Auto fill city and State From Indian Pincode during checkout"
+    description="Auto fill city and State From Indian Pincode during checkout",
+    lifespan=lifespan
 )
 
 # Register our Own Custom Exception Handler

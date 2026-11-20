@@ -84,3 +84,5 @@ desktop.ini
 *.h5
 *.pkl
 *.joblib
+
+models/fashion-mnist_train.csv
